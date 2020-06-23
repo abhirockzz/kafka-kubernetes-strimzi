@@ -1,0 +1,9 @@
+apiVersion: kafka.strimzi.io/v1beta1
+kind: KafkaUser
+metadata:
+  name: kafka-tls-client-credentials
+  labels:
+    strimzi.io/cluster: my-kafka-cluster
+spec:
+  authentication:
+    type: tls
